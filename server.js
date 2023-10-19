@@ -9,7 +9,7 @@ import formData from 'express-form-data'
 import './config/database.js'
 
 // import routes
-import {router as usersRouter } from "./routes/users.js"
+import {router as authRouter } from "./routes/users.js"
 
 // create the express app
 const app = express()
@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(formData.parse())
 
 // mount imported routes
-app.use('/users', usersRouter)
+app.use('/auth', authRouter)
 
 // handle 404 errors
 app.use(function (req, res, next) {

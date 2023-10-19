@@ -13,6 +13,7 @@
     "express-form-data": "^2.0.22",
     "http-errors": "^2.0.0",
     "mongoose": "^7.6.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "spotify-web-api-node": "^5.0.2"
   }
 }
