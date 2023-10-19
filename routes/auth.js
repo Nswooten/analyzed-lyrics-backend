@@ -2,9 +2,8 @@ import { Router } from 'express'
 
 const router = Router()
 
+import * as authCtrl from "../controllers/auth.js"
 // GET localhost:3000/users
-router.get('/', function(req, res) {
-  res.send('meow meow kitty kitty meow meow')
-})
+router.post("/login", authCtrl.login)
 
 export { router }
