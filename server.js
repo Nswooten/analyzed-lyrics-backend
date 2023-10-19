@@ -9,7 +9,7 @@ import formData from 'express-form-data'
 import './config/database.js'
 
 // import routes
-import {router as authRouter } from "./routes/users.js"
+import {router as authRouter } from "./routes/auth.js"
 
 // create the express app
 const app = express()
