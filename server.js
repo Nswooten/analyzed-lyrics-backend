@@ -12,6 +12,7 @@ import './config/database.js'
 // import routes
 import {router as authRouter} from "./routes/auth.js"
 import {router as spotifyRouter} from "./routes/spotify.js"
+import {router as lyricsRouter} from "./routes/lyrics.js"
 
 // create the express app
 const app = express()
@@ -26,6 +27,7 @@ app.use(formData.parse())
 // mount imported routes
 app.use('/auth', authRouter)
 app.use('/spotify', spotifyRouter)
+app.use('/lyrics', lyricsRouter)
 
 // handle 404 errors
 app.use(function (req, res, next) {

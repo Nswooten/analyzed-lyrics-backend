@@ -24,9 +24,7 @@ async function login (req, res){
 }
 
 async function refresh(req, res){
-  console.log('hi')
   const refreshToken = req.body.refreshToken
-  console.log(refreshToken)
   const spotifyApi = new SpotifyWebApi({
     redirectUri: process.env.REDIRECT_URI,
     clientId: process.env.SPOTIFY_CLIENT_ID,
